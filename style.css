@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*flexbox*/
+  height: 98vh;
+  margin: 0;
+  background-color: #ccccff;
+}
+
+.container {
+  width: 60vw;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-box {
+  /*updated css  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling*/
+  height: 70vh;
+  padding: 5px;
+  margin: 5px 0;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  word-wrap: break-word; /*https://www.shecodes.io/athena/76441-how-to-make-text-wrap-in-css#:~:text=To%20make%20text%20wrap%20in%20CSS%2C%20you%20can%20use%20the,specified%20width%20of%20the%20container.*/
+}
+
+.message {
+  margin: 20px;
+  padding: 7px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 70%;
+  font-size: 14px;
+}
+
+.chat-box .user {
+  align-self: flex-end;
+}
+
+.user {
+  background-color: lightgoldenrodyellow;
+}
+
+.bot {
+  background-color: lightblue;
+}
+
+.timestamp {
+  font-size: 10px;
+  color: gray;
+  position: absolute; /*had to find out through mdn*/
+  bottom: -13px;
+  right: 10px;
+}
+
+.input {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#userinput {
+  padding: 10px;
+  width: 60vw;
+  outline: none;
+  border: none; /*https://www.w3schools.com/css/css_form.asp*/
+}
+
+#sendbtn {
+  /*https://www.w3schools.com/css/css3_buttons.asp*/
+  padding: 10px;
+  border: none;
+  background-color: #3333ff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+#sendbtn:hover {
+  background-color: #6666cc;
+}
